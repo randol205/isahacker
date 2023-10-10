@@ -48,7 +48,6 @@ if (/* login is successful */) {
     header('Location: dashboard.php');
     exit; // Make sure to exit the script after the redirect
         }
-        <?php
 // Valid username and password
 $validUsername = 'myusername';
 $validPassword = 'mypassword';
