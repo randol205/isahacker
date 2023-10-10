@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    form {
+      margin-top: 200px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"], input[type="password"] {
+      padding: 8px;
+      width: 200px;
+    }
+
+    input[type="submit"] {
+      padding: 8px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <form action="login.php" method="POST">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <input type="submit" value="Sign In">
+  </form>
+</body>
+</html>
