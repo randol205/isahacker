@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Validate the username and password
     if ($username === $validUsername && $password === $validPassword) {
         // Authentication successful
-        header('Location: dashboard.php'); // Redirect to the dashboard page
+        header('Location: https://example.com/dashboard'); // Redirect to the dashboard page
         exit; // Make sure to exit the script after the redirect
     } else {
         // Authentication failed
@@ -20,3 +20,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 ?>
+
+
+
+
+
+
