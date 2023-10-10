@@ -41,6 +41,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         foreach ($errors as $error) {
             echo $error . '<br>';
         }
+        // Perform the login authentication and validation
+
+if (/* login is successful */) {
+    // Redirect to the dashboard page
+    header('Location: dashboard.php');
+    exit; // Make sure to exit the script after the redirect
+        }
     }
 }
 
