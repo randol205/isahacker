@@ -1,28 +1,20 @@
-<?php
-// Valid username and password
-$validUsername = 'myusername';
-$validPassword = 'mypassword';
-
-// Check if the form is submitted
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Get the submitted username and password
+  <?php
+  // Retrieve user input
+  if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = $_POST['username'];
     $password = $_POST['password'];
-
-    // Validate the username and password
-    if ($username === $validUsername && $password === $validPassword) {
-        // Authentication successful
-        header('Location: https://example.com/dashboard'); // Redirect to the dashboard page
-        exit; // Make sure to exit the script after the redirect
+    
+    // Validate user credentials
+    // Add your authentication logic here
+    
+    if (/* authentication successful */) {
+      // Redirect to a specified website
+      header('Location: https://example.com');
+      exit;
     } else {
-        // Authentication failed
-        echo 'Invalid username or password. Please try again.';
+      echo 'Invalid username or password. Please try again.';
     }
-}
-?>
-
-
-
-
-
-
+  }
+  ?>
+</body>
+</html>
