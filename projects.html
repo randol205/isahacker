@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Game Example</title>
+  <style>
+    #game-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 400px;
+    }
+  </style>
+</head>
+<body>
+  <div id="game-container">
+    <!-- Your game content goes here -->
+    <canvas id="game-canvas" width="600" height="400"></canvas>
+  </div>
+
+  <script>
+    // JavaScript game logic goes here
+    // For example, you can use the HTML5 canvas element and JavaScript game libraries/frameworks to create games
+    var canvas = document.getElementById("game-canvas");
+    var context = canvas.getContext("2d");
+
+    // Draw a rectangle as an example
+    context.fillStyle = "red";
+    context.fillRect(50, 50, 100, 100);
+  </script>
+</body>
+</html>
