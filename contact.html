@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Colorful Bubble Navigation</title>
+  <title>Homepage with Bubble Navigation</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #000000;
+      background-color: #f1f1f1;
     }
     
     .container {
@@ -16,24 +16,29 @@
       padding: 20px;
     }
     
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    
     .bubble-navigation {
       display: flex;
       justify-content: center;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
     }
     
     .bubble-navigation .bubble {
-      width: 80px;
-      height: 80px;
+      width: 120px;
+      height: 120px;
       border-radius: 50%;
       background-color: #ff6f69;
       margin-right: 20px;
       display: flex;
       justify-content: center;
       align-items: center;
-      color: rgb(186, 20, 20);
+      color: white;
       font-weight: bold;
-      font-size: 20px;
+      font-size: 24px;
       cursor: pointer;
       transition: background-color 0.3s;
     }
@@ -43,18 +48,53 @@
     }
     
     .bubble-navigation .bubble:hover {
-      background-color: #109a39;
+      background-color: #ffcc5c;
+    }
+    
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+    }
+    
+    .grid-item {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .grid-item h2 {
+      margin-top: 0;
+    }
+    
+    .grid-item p {
+      margin-bottom: 0;
     }
   </style>
 </head>
 <body>
   <div class="container">
+    <h1>Welcome to My Homepage</h1>
     <div class="bubble-navigation">
-      <a href="index.html" class="bubble">Homepage</a>
-      <a href="about.html" class="bubble">About This Web</a>
+      <a href="about.html" class="bubble">About</a>
+      <a href="projects.html" class="bubble">Projects</a>
       <a href="contact.html" class="bubble">Contact</a>
-      <a href="page4.html" class="bubble">4</a>
+    </div>
+    <div class="grid">
+      <div class="grid-item">
+        <h2>About Me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat euismod mauris, et dapibus nunc blandit eu.</p>
+      </div>
+      <div class="grid-item">
+        <h2>Projects</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat euismod mauris, et dapibus nunc blandit eu.</p>
+      </div>
+      <div class="grid-item">
+        <h2>Contact</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat euismod mauris, et dapibus nunc blandit eu.</p>
+      </div>
     </div>
   </div>
 </body>
-</html>ok
+</html>
