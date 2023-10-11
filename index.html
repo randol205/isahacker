@@ -1,67 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Website</title>
-  <link rel="icon" href="beaner.jpeg">
+  <title>Colorful Bubble Navigation</title>
   <style>
     body {
-      background-color: rgb(1, 1, 1);
-      text-align: center;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      background-color: #f1f1f1;
     }
-
-    header {
-      background-color: white;
+    
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
       padding: 20px;
     }
-
-    nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
+    
+    .bubble-navigation {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
     }
-
-    nav li {
-      display: inline;
-      margin-right: 10px;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: black;
-    }
-
-    section {
-      padding: 20px;
+    
+    .bubble-navigation .bubble {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: #ff6f69;
+      margin-right: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       color: white;
+      font-weight: bold;
+      font-size: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s;
     }
-
-    footer {
-      background-color: white;
-      padding: 20px;
-      color: black;
+    
+    .bubble-navigation .bubble:last-child {
+      margin-right: 0;
+    }
+    
+    .bubble-navigation .bubble:hover {
+      background-color: #ffcc5c;
     }
   </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section>
-    <h1>Welcome to My Website</h1>
-    <p>This is the homepage of my website.</p>
-  </section>
-
-  <footer>
-    <p>&copy; 2023 My Website. All rights reserved.</p>
-  </footer>
+  <div class="container">
+    <div class="bubble-navigation">
+      <div class="bubble">1</div>
+      <div class="bubble">2</div>
+      <div class="bubble">3</div>
+      <div class="bubble">4</div>
+    </div>
+  </div>
 </body>
 </html>
